@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Elifer</title>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <div class="container-box">
+        <div class="container-capa">            
+        <div class="container-diagonal">       
+        <div class="container-base">
+            
+            <div class="container-logo">
+            <a href="">    <img src="img/logo3.png" alt="">
+            </a>
+        </div>
+            <div class="container-menu">
+                <div class="dropdown">
+                    <button onclick="toggleDropdown('menu-inicio')" class="dropbtn">inicio </button>
+                     <div id="menu-modelo" class="dropdown-content">
+                        <a href="index.html">home</a>
+
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button onclick="toggleDropdown('menu-modelo')" class="dropbtn">tipos</button>
+                    <div id="menu-modelo" class="dropdown-content">
+                        <a href="#modelo-calhas">modelos</a>
+
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button onclick="toggleDropdown('orcamento')" class="dropbtn">serviços</button>
+                    <div id="orcamento" class="dropdown-content">
+                        <a href="#instalacao">Instalações</a>
+                        <a href="#orcamentos">Orçamento</a>
+                        <a href="#prontaentrega">Pronto</a>
+
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button onclick="toggleDropdown('sobre')" class="dropbtn">sobre</button>
+                    <div id="sobre" class="dropdown-content">
+                        <a href="#historia">história</a>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+        
+        <div class="container-home">
+            
+            
+            <div class="texto-tema"> Preços excelentes, venham conferir.</div>
+            
+        </div>
+       
+        </div>
+        
+    </div>
+    </div>
+    <!-- --------------------------------------Instalação de Calhas----------------------------------------- -->
+     <div id="instalacao" class="instalacao"><!--Seção dois instalação de calhas e rufos -->
+        
+        <div class="container-titulo3">
+            <div class="container-logo">
+            <a href="">    <img src="img/logo3.png" alt="">
+            </a></div>
+                <span>Galeria de Instalações</span>
+            </div>
+        <div class="container-instalacao" id="container-instalacao">
+            
+            <div class="install-calha">
+                <img src="img/pingadeira.png" alt="">
+            </div>
+
+            <div class="install-rufo">
+                <img src="img/instalandorufo.png" alt="">
+            </div>
+
+            <div class="install-calha2">
+                <img src="img/inst-calha2.jpeg" alt="">
+            </div>
+        </div>
+        <div class="container-install">
+            
+            <div class="container-install-caixa">
+                
+                <img src="img/homem-calha.png" alt="">
+                <div class="container-texto2">
+                     <p>Nós da ELIFER somos uma empresa especializada em calhas, dedicada a oferecer sempre o melhor resultado.
+Trabalhamos com precisão e usamos materiais de qualidade, garantindo durabilidade e segurança.
+Nosso compromisso é proteger sua casa contra infiltrações e valorizar a beleza do seu telhado.</p>
+                </div>
+            </div>          
+        </div>
+    </div>
+   <!-- Seção para fazer orçamento -->
+    <div class="orcamento" id="orcamentos">
+        
+        <div class="container-orcamento">
+            <div class="container-logo">
+            <a href="">    <img src="img/logo3.png" alt="">
+            </a></div>
+            <div class="container-texto-orc">
+            <span>Informe o modelo e as medidas para Orçamento</span>
+            </div>
+            <form action="#" method="post">
+                <div class="container-select">
+                    <span>Selecione o tipo desejado</span>
+                    <div class="titulo">
+                        
+                        <select id="tipo" onchange="atualizarOpcoes()">
+                            <option value="">-- Tipo --</option>
+                            <option value="calhas">Calhas</option>
+                            <option value="rufos">Rufos</option>
+                            <option value="coifas">Coifas</option>
+                            <option value="telhas">Telhas</option>
+                        </select>
+
+                        <select id="modelo">
+                            <option value="">-- Modelo --</option>
+                            <option value="calhas">Platibanda</option>
+                            <option value="rufos">Colonial</option>
+                            <option value="coifas">Moldura</option>
+                            <option value="telhas">Quadrada</option>
+                        </select>
+                        
+                        </div>
+                        <div class="container-inputs">
+                        <div class="container-input1">
+                        <label for="">Largura </label>
+                        <input type="number" value="10"><label>cm</label>
+                        </div>
+                    <div class="container-input2">
+                        <label for="">Comprimento</label>
+                        <input type="number" value="1"><label>mts</label>
+                        </div>
+                    </div>
+                    
+                    </div>
+                    <div class="botao-orcamento">
+                    <a href="">Enviar</a>
+                    <a href="">Cancelar</a>
+                </div>
+                </div>       
+                                
+            </form>
+        </div>
+    </div>
+    <!-- Pronta entrega para vendas urgentes -->
+    <div class="prontaentrega" style="text-align: center;" id="prontaentrega">
+        <div class="container-para-logo1">
+            <div class="container-logo">
+            <a href="">    <img src="img/logo3.png" alt="">
+            </a>
+            
+            <div class="container-para-logo2">
+            <span>Temos produtos para pronta entrega, com preços imperdiveis venha conferir...</span>
+                </div>
+
+        </div>
+            
+        </div>
+        <div class="container-para-logo">        
+        <div class="container-prontos">
+            
+            <div class="p1" style="position: relative;display: inline-block;">
+                <img src="/img/coifa.jpg" alt=""> <span class="valor">R$599,60</span>
+            </div>
+
+            <div class="p2" style="position: relative;display: inline-block;">
+                <img src="/img/platibanda.png" alt=""> <span class="valor">R$379,60</span>
+            </div>
+
+            <div class="p3" style="position: relative;display: inline-block;">
+                <img src="/img/pvc.png" alt=""><span class="valor">R$33,60</span>
+            </div>
+
+            <div class="p4" style="position: relative;display: inline-block;">
+                <img src="/img/rufo.jpg" alt=""><span class="valor">R$28,00</span>
+            </div>
+
+            <div class="p5" style="position: relative;display: inline-block;">
+                <img src="/img/telha.png" alt=""><span class="valor">R$150,54</span>
+            </div>
+
+            <div class="p6" style="position: relative;display: inline-block;">
+                <img src="/img/platibanda.png" alt=""><span class="valor">R$31,40</span>
+            </div>
+
+            <div class="p7" style="position: relative;display: inline-block;">
+                <img src="/img/pvc.png" alt=""><span class="valor">R$43,60</span>
+            </div>
+
+            <div class="p8" style="position: relative;display: inline-block;">
+                <img src="/img/rufo.jpg" alt=""><span class="valor">R$23,29</span>
+            </div>
+
+
+
+        </div>
+    </div>
+    <div class="container-vendas">
+                  
+            <div class="p15">
+                <img src="/img/fab.png" alt="">
+
+                <div class="texto-venda">
+               <p>
+
+                A Elifer é uma empresa especializada em soluções metálicas, oferecendo pronta entrega 
+                de produtos fabricados com chapas galvanizadas, de alumínio ou inox de alta qualidade. 
+                Com um portfólio diversificado, atende desde pequenos projetos até grandes demandas industriais,
+                 sempre priorizando resistência, durabilidade e acabamento impecável. A empresa se destaca pela 
+                 agilidade no atendimento e pelo compromisso com prazos, garantindo que seus clientes recebam o 
+                 material necessário no momento certo. Além disso, a Elifer investe em processos modernos e 
+                 rigoroso controle de qualidade, consolidando-se como referência no setor de metais.</p>
+                 </div>
+            </div> 
+         </div>    
+    </div>
+    </div>
+    <div class="historia" id="historia">        
+        <div class="historia-texto"> 
+            <span>Minha História</span> 
+             <div class="historia-texto2">
+             <p>  A ELIFER nasceu em 1994, fruto da dedicação e coragem de Elisângela e seu pai, que decidiram transformar um pequeno 
+            sonho em realidade. Naquela época, pai e filha começaram de forma simples, fabricando e instalando calhas de maneira 
+            artesanal, sempre com muito cuidado e compromisso com a qualidade.
+            O nome ELIFER foi escolhido como uma homenagem à família, representando não apenas um negócio, mas também a união, o 
+            trabalho e a tradição transmitida de geração em geração. Com o passar dos anos, a empresa cresceu, modernizou suas 
+            técnicas e expandiu seu portfólio, mas nunca deixou de lado a essência: atender cada cliente com responsabilidade e 
+            oferecer calhas de excelência para proteção e valorização de casas, comércios e indústrias.
+            Hoje, com mais de três décadas de experiência, a ELIFER é reconhecida pela confiança, durabilidade e acabamento 
+            impecável de seus produtos. O legado de Elisângela e de seu pai segue firme, guiando a empresa rumo ao futuro com a 
+            mesma paixão que deu início a tudo.</p> 
+        </div> 
+            </div>         
+          <div class="historia-foto">
+            
+            <img src="img/foto-antiga.png" alt="">
+                </div>
+       
+      
+       
+
+    </div>
+     <div class="container-contato">
+        <div class="container-social">
+            <img src="img/instagram.png" alt=""id="insta">
+            <img src="img/facebook.png" alt="" id="face">
+            <img src="img/youtube.png" alt="" id="you">
+        </div>
+        <div class="container-logomarca">
+            <img src="img/logo1.png" alt="">
+        </div>
+        <div class="container-correio">
+            <img src="img/correio.png" alt="">
+            <img src="img/zap.png" alt="">
+        </div>
+
+       </div>
+
+    <!-- <script src="js/script.js"></script> -->
+</body>
+
+</html>

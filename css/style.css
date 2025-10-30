@@ -1,0 +1,556 @@
+*{margin:0px;padding:0px;}
+body{
+    background-color:white; 
+   
+}
+.container-box{
+  width: 100%;
+  height: 100vh;
+  /* background-color: ; */
+}
+.container-capa{
+  width: 100%;
+  height: 100vh;
+  box-shadow: 0px 0px 10px rgba(201, 199, 199, 0.3);
+    background-color: #0c0c0c00;
+}
+ .container-diagonal {
+  background-image: url(../img/fabricando.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: 25% 20%; 
+  
+}
+.container-base{
+  display: flex;
+  flex-direction:column;
+  
+
+}
+.container-box{
+   width: auto;
+   height: 100vh;
+   
+}
+.container-home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    
+}
+.container-logo{
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+ 
+}
+.container-logo img{
+  /* width: 250px; */
+   margin: 20px;
+  
+}
+/* texto animado na primeira pagina no meio do site */
+.texto-tema{   
+  max-width:1000px;
+  display: flex;
+  flex-direction: column;  
+  color:orange;
+  font-size: clamp(1.2rem,50vw,6.5rem);   
+  /* font-family: monospace; Fonte monoespaçada ajuda a simular o efeito */
+  width: 50%; /* Largura padrão */
+  max-width: 40ch; /* Limita a largura para caber no texto. 'ch' é a unidade do tamanho de um caractere. */
+  white-space: nowrap; /*Impede quebra de linha*/
+  overflow: hidden; /* Esconde o texto que excede a largura */
+  /*border-right: 2px solid;  Cria o cursor piscando */
+  animation: 
+    digitando 4s steps(25) forwards, /* Anima a digitação */
+    cursor-piscando 0.75s step-end infinite; /* Anima o cursor piscando */
+    overflow: break-all;
+     -webkit-text-stroke: 1px orange; /* 1px de contorno preto */
+    text-shadow: 
+    -1px 1px 0px #fff,
+    1px -1px 0px #fff,
+    -1px 1px 0px #fff,
+    1px 1px 0px;
+}
+
+/* Animação de Digitação */
+@keyframes digitando {
+  from { width: 0 }
+  to { width: 30ch }
+}
+
+/* Animação do Cursor */
+@keyframes cursor-piscando {
+  50% { border-color: transparent }
+}
+  .container-btn1{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  
+}     
+.container-menu{
+    display: flex;
+    align-items:center;
+    justify-content:flex-start;
+    margin: 20px;    
+    width: auto;
+  height: 50px;
+  background-color:
+}   
+.container-menu ul{
+    text-transform: uppercase;
+    width: 200px;
+    height: 40px;
+    background-color: orange;
+    margin:10px;
+    
+    
+} 
+.container-menu li{
+    text-transform: uppercase;
+    /* font-size: 14px; */
+    
+  }
+
+/* menu dropdown */   
+    .dropbtn {
+      background-color: orange;
+      padding: 10px 20px;
+      font-size: 13px;
+      border: none;
+      cursor: pointer;
+      text-transform: uppercase;
+      position: relative;
+      display: inline-block;
+      margin: 2px;
+      font-weight: 700;
+      color: white;
+      width: 100px;
+    }
+    .dropbtn:hover{
+      background-color: white;
+      color: orange;
+    }
+
+    /* Conteúdo escondido */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      /* min-width: 160px; */
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      border-radius: 6px;
+      z-index: 1;
+    }
+
+    /* Links dentro do dropdown */
+    .dropdown-content a {
+      /* color: orange; */
+      padding: 10px 15px;
+      text-decoration: none;
+      display: block;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+    .dropdown:hover .dropdown-content{
+      display: block;
+    }
+    /* Mostrar quando ativo */
+    .show {
+      display: block;
+    }
+    /* menu dropdown encerra aqui */
+
+      .orcamento{
+        width: 100%;
+        height: 100vh;
+        display: flex;        
+        justify-content: center;
+        align-items: center; 
+        position: relative;
+      }
+      .container-orcamento{
+        border: 1px solid orange;
+        width: 98%;
+        height:98vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;  
+        flex-direction: column;     
+      }
+      .container-orcamento img{
+        position: absolute;
+        top:0;
+        left: 0;
+      }
+       .container-orcamento span{        
+        font-size: clamp(1.4rem,50vw,1.9rem);
+        color: orange;
+        
+      }
+      .container-select{
+        display: flex;        
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: 250px;
+        flex-wrap: wrap;           
+      }
+      
+      .container-input1 label{
+        font-size: 20px;
+
+      }
+      .container-select label{
+       font-size: clamp(1.2rem,50vw,1.2rem); 
+       margin: 1%;
+       display: flex;
+       align-items: center;
+       }
+        .titulo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: clamp(1.2rem,50vw,1.5rem);
+        /* height: 50%; */
+        
+      }
+      form{
+        background-color: rgba(255, 166, 0, 0.412);
+        border: 1px solid orange;
+        outline: 5px solid #fff;
+      }
+      
+      .container-select select{
+        width: 220px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        margin: 5px;
+      }
+      .container-select span{
+        /* text-align: center; */
+        font-size: clamp(1.2rem,50vw,1.7rem);
+        margin: 20px;
+        
+      }
+      .container-orcamento input{
+        width: 80px;
+        height: 30px;
+        margin: 5px;
+      }
+      .container.inputs{
+        display: flex;
+        margin-left: 300px;
+      }
+      .container-input1{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      } 
+      .botao-orcamento{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      } 
+      .botao-orcamento a{
+        width: 150px;
+        height: 50px;
+        background-color: orange;
+        margin: 76px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        text-decoration: none;
+        font-weight: 800;
+        color: #fff;
+      }
+      .botao-orcamento a:hover{
+        background-color: beige;
+        color: orange;
+      }
+      .container-input1 label{
+        width: 185px;
+        
+      }
+      .container-input2 label{
+        width: 180px;
+        
+      }
+      .container-input2{
+        display: flex;
+        flex-direction: row;
+      }
+      
+    /* até aqui foi o form    */
+   
+    /* produtos prontos para entrega */
+    .prontaentrega{
+      width: 100%;
+      height: 100vh;
+      /* display: flex; */
+    }
+    .container-prontos{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content:space-around;
+      align-items: center;
+      width: 700px;
+      gap: 25px;
+    }
+
+   .p1 img, .p2 img,.p3 img,.p4 img,.p5 img,.p6 img,.p6 img,.p7 img,.p8 img,.p9 img,.p10 img,.p11 img,.p12 img,.p13 img,.p14 img,.p16 img{
+    width: 150px;
+    height: 100px;
+    margin-left: 3px;
+    border: 1px solid orangered;
+   }
+   .valor{
+  position: absolute;
+  top: 75%;        /* posiciona no meio */
+  left: 50%;
+  transform: translate(-50%, -50%); /* centraliza */
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.5); /* fundo transparente */
+  padding: 5px 10px;
+   }
+   .container-prontos span{
+    font-size: 16px;
+   }
+
+   /* css para instalação de calhas */
+   .instalacao{
+    width: 100%;
+    height: 100vh;
+   }
+   .container-titulo3{
+    display:flex;
+    justify-content:center;
+    align-items: flex-start;
+    position: relative;
+    height: 130px;    
+    color: orange;
+    
+   }
+   .container-titulo3 img{
+    position: absolute;
+    left: 0;
+    
+   }
+   .container-titulo3 span{
+    font-size: clamp(1.2rem,50vw,2.5rem);
+    margin-top: 40px;
+   }
+   .container-instalacao{
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    /* transform: rotate(45deg); */
+   }
+   .install-calha img, .install-rufo img, .install-calha2 img{
+    display: flex;
+    /* flex-direction: row; */
+    width: 300px;
+    height: 200px;
+    margin: 30px;
+    border: 4px solid white;
+    outline: 2px solid orange;
+   }   
+   .container-install{    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+   }
+   .container-install-caixa{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 98%;
+    border: 1px solid orange;
+    height: 42vh;
+    background-color: orange;
+   }
+      .container-install-caixa img{
+    width: 19.5%;
+    /* outline: 1px solid black; */
+    
+   }
+   .container-install-caixa img{
+    width: 19.5%;
+    /* outline: 1px solid black; */
+    
+   }
+   .container-texto2{
+    text-align: center;
+    width: 80%;
+   }
+   .container-texto2 p{
+    font-size: clamp(1.3rem, 50vw, 1.7rem);
+    text-align: justify;
+    margin-left:5px;
+    color: white;
+  }
+  .container-para-logo{
+      display: flex;
+      flex-direction: column;
+      align-items:center ;
+      justify-content:space-around;
+  }
+  .container-para-logo1{
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: flex-start;
+      
+    }
+    .container-para-logo2{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 20vh;
+      width: 70%;
+      /* animation: piscaOpacity 5s infinite; */
+      /* ajuste a duração (1s) para acelerar/achar mais lento */
+    }
+
+    @keyframes piscaOpacity {
+      0%, 100% { opacity: 1; }
+      50%      { opacity: 0; }
+    }
+    
+    .container-para-logo2 span{
+      font-size: clamp(1.4rem, 50vw,1.9rem);
+      color: orange;
+      
+    }
+    .container-vendas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 99%;
+    border: 1px solid orange;    
+    height: 45vh;
+    background-color: orange;
+    justify-content: space-between;
+   }
+   .container-vendas img{
+    display: flex;
+    justify-content: space-around;
+    /* outline: 2px solid white; */
+    width: 150px;
+    
+   }
+   .p15{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: anchor-center;
+   }
+
+   .texto-venda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+   }
+   .texto-venda p{
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    width: 96%;
+   }
+   .historia{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+    /* background-color: orange; */
+   } 
+    .historia-foto{
+    height: 50vh;
+    background-color:#fffbd4;
+    
+   }
+   .historia-texto span{
+    font-size: clamp(1.4rem,50vw,2.5rem);
+    color: orange;
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+
+   } 
+   .historia-texto{    
+    color: orange;
+    width: auto;
+
+   }
+   .historia-texto p{    
+    color: orange;
+    margin: 20px;
+    text-align: justify;
+    font-size: 20px;
+    line-height:150%;
+  }
+   .historia-foto img{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+   }
+   .container-contato{
+    width: 100%;
+    max-width: 1570px;
+    height: 300px;
+    background-color: rgba(255, 166, 0, 0.578);
+    /* outline: rgb(251, 251, 6) 3px solid; */
+    /* outline-offset: 1px; */
+    display: flex;
+    justify-content: space-around;
+    align-items:end;
+    height: 100px;
+    padding-bottom: 10px;
+   }
+    .container-social,
+    .container-correio{
+      display: flex;
+      
+      gap: 18px;
+    }
+   
+    .container-social img,
+    .container-correio img{
+      display: flex;
+      width: 30px;
+    }
+    #insta{
+      width: 70px;
+      height: 57px;
+      margin-right: -33px;
+    }
+    #face{
+      width: 40px;
+      height: 40px;
+      margin-top: 9px;
+      border-radius: 6px;
+      margin-right: -23px;
+    }
+    #you{
+      width:50px;
+      height: 54px;
+      margin-top:2px
+    }
